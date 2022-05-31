@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Service by rus_VLP</title>
+    <link rel="stylesheet" href="styles/style_index.css">
+</head>
+<body>
+    <div class = "addCommentFormHolder">
+        <div class="sortForm form">
+            <form action="#" class = "addCommentFormForm" method="dialog" >
+                <div>
+                    <label style = "color: black;"for="commentatorName">Ваше имя:</label>
+                    <input type="text" name="" id="commentatorName">
+                </div>
+                <div>
+                    <label style = "color: black;"for="busytype">Род занятий: </label>
+                    <input type="text" name="" id="busytype">
+                </div>
+                <div>
+                    <label style = "color: black;"for="rateFilm">Оценка фильму: </label>
+                    <input type="number" name="" id="rateFilm">
+                </div>
+                <div>
+                    <label style = "color: black;"for="comItself">Текст комментария: </label>
+                    <input type="text" name="" id="comItself">
+                </div>
+                <div style = "display: flex; justify-content: center; align-items: center;">
+                    <input type = "submit" class = "submitAddComment" value = "Добавить комментарий">
+                </div>
+                <div class="sortAdditionalBtn addCommentBack">
+                    Назад
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="filmInfo">
+        <div class = "beforeComms">
+            <div class="filmNameInfo">
+                <div style="width: 10%;"></div>
+                <div class="descFilmInfo" style="font-size: 30pt; margin:0;">Название фильма: </div>
+                <div class = "filmDescCloseBtn">
+                    <img src="assets/images/closebtn.png" alt="">
+                </div>
+            </div>
+            <div class = "filmInfoBottomBlock">
+                <div class = "filmInfoImageBlock">
+                    <img src="https://upload.wikimedia.org/wikipedia/ru/c/cb/AmazingSpiderMan50.jpg" style = "height: 80%; " class = "imgsource" alt="постер">
+                </div>
+                <div class = "descFilmDescription">
+                    <div class = "desc desc1">Страна: </div>
+                    <div class = "desc desc2">Жанр: </div>
+                    <div class = "desc desc3">Режиссеры: </div>
+                    <div class = "desc desc4">Сценарист: </div>
+                    <div class = "desc desc5">Продюсер: </div>
+                    <div class = "desc desc6">Композитор: </div>
+                    <div class = "desc desc7">Мировые сборы: </div>
+                    <div class = "desc desc8">Рейтниг возраста: </div>
+                    <div class = "desc desc9">Длительность: </div>
+                    <div class = "desc desc10" style="margin-bottom: 10pt;">Дата выхода: </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="deleteBtn addComment">
+                <div>Добавить комментарий</div>
+            </div>
+            <div class = "commentsSign">Комментарии: </div>
+            <div class = "commentsBlock"></div>
+        </div>
+    </div>
+    <div class="sortElement">
+        <div class="sortForm form">
+            <form action="#" class = "sortFormForm" method="dialog" >
+                <div>
+                    <label for="filmNameSort">Название фильма</label>
+                    <input type="text" name="" id="filmNameSort">
+                </div>
+                <div class="country">
+                    <label>Страна</label>
+                    <select name="countySort" id = "countrySort"> 
+                        <option value="Не выбрано" selected>Не выбрано</option>
+                        <option value="Россия">Росиия</option>
+                        <option value="США" >США</option>
+                        <option value="Германия">Германия</option>
+                        <option value="СССР">СССР</option>
+                        <option value="Япония">Япония</option>
+                        <option value="Индия">Индия</option>
+                        <option value="Китай">Китай</option>
+                        <option value="Франиця">Франиця</option>
+                        <option value="Великобритания">Великобритания</option>
+                        <option value="Северная Корея">Северная Корея</option>
+                      </select>
+                </div>
+                <div class="genre">
+                    <label for="genreSelSort">Жанр</label>
+                    <select name="genreSelSort" id="genreSelSort">
+                        <option value="Не выбрано" selected>Не выбрано</option>
+                        <option value="Комедия">Комедия</option>
+                        <option value="Боевик">Боевик</option>
+                        <option value="Драма">Драма</option>
+                        <option value="Документальный фильм">Документальный фильм</option>
+                        <option value="Приключения">Приключения</option>
+                        <option value="Фантастика">Фантастика</option>
+                        <option value="Триллер">Триллер</option>
+                        <option value="Хоррор">Хоррор</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dateOfReleaseStart">Дата выхода<br>От:</label>
+                    <input type = "date" name = "dateOfReleaseStart" id = "dateOfReleaseStart">
+                </div>
+                <div>
+                    <label for="dateOfReleaseEnd">До:</label>
+                    <input type = "date" name = "dateOfReleaseEnd" id = "dateOfReleaseEnd">
+                </div>
+                <div style = "display: flex; justify-content: center; align-items: center;">
+                    <input type = "submit" class = "submitSort" value = "Сортировать">
+                </div>
+                <div class = "sortAdditionalBtn sortReset">
+                    Сбросить сотритроку
+                </div>
+                <div class="sortAdditionalBtn sortBack">
+                    Назад
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="addFilm">
+        <div class="addFilmSign">
+            <div>Добавить фильм</div>
+        </div>
+        <div class="addFilmForm form">
+                <form action="#" class = "addFilmFormForm" method="dialog" >
+                    <div>
+                        <label for="filmName">Название фильма</label>
+                        <input type="text" name="" id="filmName">
+                    </div>
+                    <div class="country">
+                        <label>Страна</label>
+                        <select name="county" id = "country"> 
+                            <option value="Россия" selected>Росиия</option>
+                            <option value="США" >США</option>
+                            <option value="Германия">Германия</option>
+                            <option value="СССР">СССР</option>
+                            <option value="Япония">Япония</option>
+                            <option value="Индия">Индия</option>
+                            <option value="Китай">Китай</option>
+                            <option value="Франиця">Франиця</option>
+                            <option value="Великобритания">Великобритания</option>
+                            <option value="Северная Корея">Северная Корея</option>
+                          </select>
+                    </div>
+                    <div class="genre">
+                        <label for="genreSel">Жанр</label>
+                        <select name="genreSel" id="genreSel">
+                            <option value="Комедия">Комедия</option>
+                            <option value="Боевик">Боевик</option>
+                            <option value="Драма">Драма</option>
+                            <option value="Документальный фильм">Документальный фильм</option>
+                            <option value="Приключения">Приключения</option>
+                            <option value="Фантастика">Фантастика</option>
+                            <option value="Триллер">Триллер</option>
+                            <option value="Хоррор">Хоррор</option>
+                        </select>
+                    </div>
+                    <div class = "directors">
+                        <label for="direcorsName_1">Имя режиссера</label>
+                        <input required type="text" name="" id="directorsName_1">
+                    </div>
+                    <div style = "display: flex; align-items: center; justify-content: center; height: 100%;">
+                        <div class = "addDirectorBtn" >
+                            Добавить режиссера
+                        </div>
+                    </div>
+                    <div>
+                        <label for="scenarist">Автор сценария</label>
+                        <input type="text" name="" id="scenarist">
+                    </div>
+                    <div>
+                        <label for="producer">Продюсер</label>
+                        <input type="text" name="" id="producer">
+                    </div>
+                    <div>
+                        <label for="composer">Композитор</label>
+                        <input type="text" name="" id="composer">
+                    </div>
+                    <div>
+                        <label for="earnings">Сборы</label>
+                        <input type="number" name="" id="earnings">
+                    </div>
+                    <div>
+                        <label for="ratingAge">Рейтниг возраста</label>
+                        <select name="ratingAge" id = "ratingAge">
+                            <option value="0">0+</option>
+                            <option value="3">3+</option>
+                            <option value="6">6+</option>
+                            <option value="12">12+</option>
+                            <option value="16">16+</option>
+                            <option value="18">18+</option>
+                            <option value="21">21+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Длительность:</label>
+                        <div class = "durationBlock" style="display: flex; flex-direction: row;  justify-content:space-between; width: 50%; margin-left: 25%; margin-right:25%; margin-top: 0; margin-bottom:0">
+                            <div class = "hoursBlock timeblock" style = "line-height: 100%;">
+                                <div class="timeName">Часы</div>
+                                <input type="number" name="" id="hrs">
+                            </div>
+                            <div class="minutesBlock timeblock" style = "line-height: 100%;">
+                                <div class="timeName">Минуты</div>
+                                <input type="number" id = "mins">
+                            </div>
+                            <div class="secondsBlock timeblock" style = "line-height: 100%;">
+                                <div class="timeName">Секунды</div>
+                                <input type="number" id = "sec">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="dateOfRelease">Дата выхода</label>
+                        <input type = "date" name = "dateOfRelease" id = "dateOfRelease" required>
+                    </div>
+                    <div>
+                        <label for = "imageLink">Ссылка на постер</label>
+                        <input type="text" name="" id="imageLink">
+                    </div>
+                    <div style = "display: flex; justify-content: center; align-items: center;">
+                        <input type = "submit" class = "submitFilm" value = "Добавить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class = "header">
+        <div class="logoblock">
+            <div class = "logoicon">
+                <img src="assets/images/logo.png" alt="" srcset="">
+            </div>
+            <div class="logosign">
+                ҚоберMovies
+            </div>
+            
+        </div>
+        <div class="navblock">
+            <div class="sortBtnElement" style = "height: 90%;">
+                <div class = "sortBtn">Сортировка</div>
+            </div>
+        </div>
+        <div class="addfilmbtnblock">
+            <div class="addfilmbtn" style="height: 90%;">
+                <div class="addfilmsign">+ Добавить фильм</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <!--div class="moviecard">
+            <div class="movieName">Название фильма</div>
+            <div class=>
+                <img src="https://upload.wikimedia.org/wikipedia/ru/c/cb/AmazingSpiderMan50.jpg" class = "imgsource" alt="постер">
+            </div>
+            <div class = "desc">Страна: </div>
+            <div class = "desc">Жанр: </div>
+            <div class = "desc">Режиссеры: </div>
+            <div class = "desc">Сценарист: </div>
+            <div class = "desc">Продюсер: </div>
+            <div class = "desc">Композитор: </div>
+            <div class = "desc">Мировые сборы: </div>
+            <div class = "desc">Рейтниг возраста: </div>
+            <div class="desc">Длительность: </div>
+            <div class = "desc" style="margin-bottom: 10pt;">Дата выхода: </div>
+            <div class="deleteBtn" onclick="">
+                <div>Посмотреть информацию</div>
+            </div>
+            <div class="deleteBtn">
+                <div>Удалить</div>
+            </div>
+        </div-->
+        
+    </div>
+    
+    <script type="module" src = "scripts/script_index.js"></script>
+
+</body>
+</html>
+
+ <!--div class="comment">
+                <div class="cName">Имя: </div>
+                <div class="cBusy">Род занятий: </div>
+                <div сlass="cRate">Оценка фильму: </div>
+                <div class="cItself">Комментарий: saksdaklsdjaklsdlkasjdksdj
+                    alskdjalskdjalksdjklasjdalksjdalksjdklasjdaklsjdklasjdlkasjdlkasjdkasjdlkasjdakjsdlajslkdjaslkjdlaksjdasjlkdka</div>
+</div-->

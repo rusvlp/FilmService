@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --fira: 'Fira Sans', sans-serif;
+    --ubuntu: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: gray;
+    width: 100%;
+    height: 50pt;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div{
+    height: 100%;
+}
+
+.logoblock{
+    width: 10%;
+    background-color: red;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoblock div{
+    height: 90%;
+}
+
+.logoicon{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logoicon img{
+    display: block;
+    height: 80%;
+}
+
+.logosign{
+    margin-left: 2pt;
+    font-family: var(--fira);
+    width: 80%;
+    font-size: 14pt;
+    line-height: 350%;
+}
+
+
+
+.navblock{
+    width: 80%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    
+}
+
+.addfilmbtnblock{
+    background-color: blue;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addFilm{
+    position: absolute;
+    width: 50%;
+    border-radius: 10px;
+    background-color: brown;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    display: none;
+}
+
+.addfilmbtn{
+    width: 70%;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.addfilmbtn div{
+    font-family: var(--ubuntu);
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    line-height: 220%;
+}   
+
+.addfilmbtn:hover{
+    background-color: #393939;
+    cursor: pointer;
+}
+
+.addFilmSign{
+    height: 10%;
+
+    
+}
+
+.addFilmSign div{
+    font-family: var(--ubuntu);
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    line-height: 220%;
+}   
+
+.form{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15pt;
+}
+.form form div label{
+    display: block;
+    text-align: center;
+    font-family: var(--ubuntu);
+    font-size: 15pt;
+    color: white;
+    margin-bottom: 10pt;
+}
+
+.form form div input{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #3A3845;
+    border-radius: 5pt;
+    height: 5vh;
+    width: 70%;
+    font-size: 15pt;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.form form div select{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #3A3845;
+    border-radius: 5pt;
+    height: 5vh;
+    width: 70%;
+    font-size: 15pt;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.addDirectorBtn{
+    width: 300pt;
+    height: 50pt;
+    font-family: var(--ubuntu);
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    line-height: 220%;
+    background-color: gray;
+    border-radius: 10px;
+
+}   
+
+.addDirectorBtn:hover{
+    background-color: #393939;
+    cursor: pointer;
+}
+
+.durationBlock{
+    
+
+}
+
+.timeblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.timeblock div{
+    display: block;
+    text-align: center;
+    font-family: var(--ubuntu);
+    font-size: 15pt;
+    color: white;
+    margin-bottom: 10pt;
+}
+
+.timeblock input{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #3A3845;
+    border-radius: 5pt;
+    height: 5vh;
+    width: 70%;
+    font-size: 15pt;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.submitFilm{
+    width: 70%;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: var(--ubuntu);
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    line-height: 220%;
+}
+    
+
+    
+.submitFilm:hover{
+        background-color: black;
+        cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.moviecard{
+    width: 20%;
+   
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    margin-top: 20pt;
+}
+
+.moviecard div{
+    font-family: var(--ubuntu);
+    color: black;
+}
+
+.movieName{
+    margin-top: 10pt;
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 10pt;
+}
+
+
+
+.imgsource{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 300pt;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.desc{
+    margin-top: 5pt;
+    margin-left: 15%;
+    width: 70%;
+    margin-right: 15%;
+    font-size: 15pt;
+    text-overflow: ellipsis;
+}
+
+.deleteBtn{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.deleteBtn div{
+    font-family: var(--ubuntu);
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    line-height: 220%;
+}   
+
+.deleteBtn:hover{
+    background-color: #393939;
+    cursor: pointer;
+}
+
+
+.sortBtnElement{
+    width: 20%;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+}
+
+.sortBtnElement:hover{
+    background-color: #393939;
+    cursor: pointer;
+}
+
+.sortBtn{
+    font-family: var(--ubuntu);
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    line-height: 220%;
+    height: 10%;
+}
+
+.sortElement{
+    position: absolute;
+    display: none;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top:30px;
+  
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.submitSort:hover{
+        background-color: black;
+        cursor: pointer;
+}
+
+.sortAdditionalBtn{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: gray;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    font-family: var(--ubuntu);
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    line-height: 220%;
+}
+
+.sortAdditionalBtn:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.filmInfo{
+    position: absolute;
+    width: 90%;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5vh;
+    box-shadow: 2px 2px 8px 4px rgba(34, 60, 80, 0.2);
+    
+}
+
+.filmNameInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5pt;
+}
+
+.descFilmInfo{
+    font-family: var(--ubuntu);
+    margin-top: 5pt;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 15pt;
+    height: 10%;
+    text-overflow: ellipsis;
+}
+
+.beforeComms{
+    height: 90vh;
+}
+
+.filmInfoBottomBlock{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+.filmInfoImageBlock{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 33%;
+    height: 100%;
+}
+
+.descFilmDescription{
+    height: 100%;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ubuntu);
+    padding-top: 40pt;
+    padding-left: 20pt;
+}
+
+
+
+.filmDescCloseBtn{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.filmDescCloseBtn img{
+    height: 30px;
+    display: block;
+    margin-right: 20pt;
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.commentsSign{
+    text-align: center;
+    font-family: var(--ubuntu);
+    font-size: 20pt;
+    margin-bottom: 10pt;
+}
+
+.comment{
+    width: 80%;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 10pt;
+    color: white;
+    font-family: var(--ubuntu);
+    font-size: 20pt;
+    padding-left: 15pt;
+}
+
+.cName{
+    margin-top: 15pt;
+}
+
+.cItself{
+    margin-bottom: 15pt;
+}
+
+.addCommentFormHolder{
+    position: absolute;
+    width: 90%;
+    display: none;
+    margin-top: 10pt;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 2px 2px 8px 4px rgba(34, 60, 80, 0.2);
+    z-index: 1;
+}  
+
+.submitAddComment:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.commentsBlock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
